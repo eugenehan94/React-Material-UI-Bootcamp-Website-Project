@@ -1,3 +1,11 @@
+# React and Material UI Bootcamp Website
+
+## Github page link: https://eugenehan94.github.io/React-Material-UI-Bootcamp-Website-Project/
+
+A webpage built with React Js and Material UI framework.
+
+
+-----------------------------------------------------------------------------------------------------
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
