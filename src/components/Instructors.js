@@ -81,8 +81,8 @@ const Instructors = () => {
                 </Typography>
                 <Typography align="center">
                   Jane Doe is an American entrepreneur, media proprietor,
-                  investor, and computer engineer. He is the founder and
-                  executive chairman of Angular, where he previously served as
+                  investor, and computer engineer. She is the founder and
+                  executive chairman of Angular, where she previously served as
                   the president and CEO.
                 </Typography>
               </CardContent>
@@ -103,8 +103,8 @@ const Instructors = () => {
                 </Typography>
                 <Typography align="center">
                   Sara Smith is an American business magnate, software
-                  developer, investor, author, and philanthropist. He is a
-                  co-founder of Material UI soft, along with his late childhood
+                  developer, investor, author, and philanthropist. She is a
+                  co-founder of Material UI soft, along with her late childhood
                   friend John Doe. She loves here job at Material UI.
                 </Typography>
               </CardContent>

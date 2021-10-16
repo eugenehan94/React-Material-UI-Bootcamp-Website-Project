@@ -55,8 +55,11 @@ const useStyles = makeStyles((theme) => ({
 
     display: "flex",
     flexDirection: "column",
-
+    alignItems: "center",
     textAlign: "center",
+    [theme.breakpoints.up("md")]: {
+      display: "none",
+    },
   },
   closeButton: {
     textAlign: "right",
@@ -64,11 +67,16 @@ const useStyles = makeStyles((theme) => ({
     marginRight: theme.spacing(2),
     marginBottom: theme.spacing(3),
     fontSize: "2rem",
+    "&:hover": {
+      cursor: "pointer",
+    },
   },
   linkSmall: {
     color: "#fff",
     fontSize: "2rem",
     marginBottom: theme.spacing(2),
+    border: "1px solid #424242",
+    width: "90%",
   },
 }));
 
