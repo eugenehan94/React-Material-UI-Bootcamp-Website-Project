@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/React-Material-UI-Bootcamp-Website-Project/static/css/main.d94e54bc.chunk.css",
+    "main.js": "/React-Material-UI-Bootcamp-Website-Project/static/js/main.24066241.chunk.js",
+    "main.js.map": "/React-Material-UI-Bootcamp-Website-Project/static/js/main.24066241.chunk.js.map",
+    "runtime-main.js": "/React-Material-UI-Bootcamp-Website-Project/static/js/runtime-main.7a4e9018.js",
+    "runtime-main.js.map": "/React-Material-UI-Bootcamp-Website-Project/static/js/runtime-main.7a4e9018.js.map",
+    "static/js/2.51d1f749.chunk.js": "/React-Material-UI-Bootcamp-Website-Project/static/js/2.51d1f749.chunk.js",
+    "static/js/2.51d1f749.chunk.js.map": "/React-Material-UI-Bootcamp-Website-Project/static/js/2.51d1f749.chunk.js.map",
+    "static/js/3.287cd416.chunk.js": "/React-Material-UI-Bootcamp-Website-Project/static/js/3.287cd416.chunk.js",
+    "static/js/3.287cd416.chunk.js.map": "/React-Material-UI-Bootcamp-Website-Project/static/js/3.287cd416.chunk.js.map",
+    "index.html": "/React-Material-UI-Bootcamp-Website-Project/index.html",
+    "static/css/main.d94e54bc.chunk.css.map": "/React-Material-UI-Bootcamp-Website-Project/static/css/main.d94e54bc.chunk.css.map",
+    "static/js/2.51d1f749.chunk.js.LICENSE.txt": "/React-Material-UI-Bootcamp-Website-Project/static/js/2.51d1f749.chunk.js.LICENSE.txt",
+    "static/media/MaterialUI.a20ce18d.svg": "/React-Material-UI-Bootcamp-Website-Project/static/media/MaterialUI.a20ce18d.svg",
+    "static/media/reactSVG.0960bd7e.svg": "/React-Material-UI-Bootcamp-Website-Project/static/media/reactSVG.0960bd7e.svg",
+    "static/media/showcase.e48f3c0e.svg": "/React-Material-UI-Bootcamp-Website-Project/static/media/showcase.e48f3c0e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a4e9018.js",
+    "static/js/2.51d1f749.chunk.js",
+    "static/css/main.d94e54bc.chunk.css",
+    "static/js/main.24066241.chunk.js"
+  ]
+}
