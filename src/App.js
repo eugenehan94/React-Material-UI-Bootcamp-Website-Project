@@ -1,6 +1,6 @@
 import React from "react";
 /*Imports for Material UI*/
-import { Container } from "@material-ui/core";
+
 /*Imports for components*/
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
@@ -10,7 +10,7 @@ import RowFirst from "./components/RowFirst";
 import RowSecond from "./components/RowSecond";
 import Faq from "./components/Faq";
 import Instructors from "./components/Instructors";
-
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -22,6 +22,7 @@ function App() {
       <RowSecond />
       <Faq />
       <Instructors />
+      <Footer />
     </>
   );
 }

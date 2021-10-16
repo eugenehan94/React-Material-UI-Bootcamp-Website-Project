@@ -16,13 +16,25 @@ import PeopleIcon from "@material-ui/icons/People";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    paddingTop: theme.spacing(2),
+    paddingTop: theme.spacing(5),
+    paddingBottom: theme.spacing(8),
   },
   gridChild: {
     display: "flex",
   },
+  card: {
+    color: "#fff",
+    backgroundColor: "#272c34",
+  },
   cardContent: {
     textAlign: "center",
+  },
+  button: {
+    color: "#fff",
+    backgroundColor: "#1976d2",
+    "&:hover": {
+      backgroundColor: "#115293",
+    },
   },
 }));
 const Showcase = () => {
@@ -31,7 +43,7 @@ const Showcase = () => {
     <Container className={classes.container}>
       <Grid container spacing={3}>
         <Grid item md={4} sm={12} className={classes.gridChild}>
-          <Card>
+          <Card className={classes.card}>
             <CardContent className={classes.cardContent}>
               <ComputerIcon />
               <Typography variant="h5" gutterBottom>
@@ -45,12 +57,12 @@ const Showcase = () => {
                 loves. When your brand creates a genuine connection with
                 customers and employees.
               </Typography>
-              <Button>Read More</Button>
+              <Button className={classes.button}>Read More</Button>
             </CardContent>
           </Card>
         </Grid>
         <Grid item md={4} sm={12} className={classes.gridChild}>
-          <Card>
+          <Card className={classes.card}>
             <CardContent className={classes.cardContent}>
               <PersonIcon />
               <Typography variant="h5" gutterBottom>
@@ -63,12 +75,12 @@ const Showcase = () => {
                 optimization (SEO). SEO refers to an umbrella of techniques that
                 enhance your website’s ranking for relevant search results.
               </Typography>
-              <Button>Read More</Button>
+              <Button className={classes.button}>Read More</Button>
             </CardContent>
           </Card>
         </Grid>
         <Grid item md={4} sm={12} className={classes.gridChild}>
-          <Card>
+          <Card className={classes.card}>
             <CardContent className={classes.cardContent}>
               <PeopleIcon />
               <Typography variant="h5" gutterBottom>
@@ -81,7 +93,7 @@ const Showcase = () => {
                 audience. As a full-service digital marketing agency, we also
                 offer content marketing services to enhance your strategy.
               </Typography>
-              <Button>Read More</Button>
+              <Button className={classes.button}>Read More</Button>
             </CardContent>
           </Card>
         </Grid>

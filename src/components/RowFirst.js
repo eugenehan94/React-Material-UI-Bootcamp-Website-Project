@@ -11,51 +11,77 @@ import {
   makeStyles,
   Box,
 } from "@material-ui/core";
-
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 const useStyles = makeStyles((theme) => ({
+  firstRowContainer: {
+    marginTop: theme.spacing(10),
+    marginBottom: theme.spacing(10),
+    [theme.breakpoints.down("sm")]: {
+      marginTop: theme.spacing(3),
+      textAlign: "center",
+    },
+  },
   image: {
     width: "90%",
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+    },
   },
   content: {
     display: "flex",
     flexDirection: "column",
-    border: "1px solid red",
     justifyContent: "center",
     height: "100%",
+  },
+  button: {
+    width: "30%",
+    justifyContent: "flex-start",
+    marginTop: theme.spacing(2),
+    [theme.breakpoints.down("sm")]: {
+      width: "100%",
+      display: "flex",
+      justifyContent: "center",
+      border: "1px solid grey",
+    },
   },
 }));
 
 const RowFirst = () => {
   const classes = useStyles();
   return (
-    <>
+    <div className={classes.firstRowContainer}>
       <Container>
         <Grid container>
-          <Grid item xs={6}>
+          <Grid item md={6} sm={12}>
             <div>
               <img className={classes.image} src={reactSVG} alt="React" />
             </div>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item md={6} sm={12}>
             <Box className={classes.content}>
-              <Typography gutterBottom>
+              <Typography variant="h4" gutterBottom>
                 Learn the Fundamentals: React Js
               </Typography>
-              <Typography gutterBottom>
+              <Typography variant="h6" gutterBottom>
                 This course will teach you the skills you need in order to
                 become a professional React developer.
               </Typography>
-              <Typography gutterBottom>
+              <Typography variant="body1" gutterBottom>
                 The best learning experience paired with a world-class
                 instructor. This massive course aims to turn you into hireable
                 React developer as fast as humanly possible.
               </Typography>
-              <Button>Read More</Button>
+              <Button
+                className={classes.button}
+                startIcon={<ChevronRightIcon />}
+              >
+                Read More
+              </Button>
             </Box>
           </Grid>
         </Grid>
       </Container>
-    </>
+    </div>
   );
 };
 

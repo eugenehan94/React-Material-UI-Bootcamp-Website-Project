@@ -10,16 +10,24 @@ import {
 
 const useStyles = makeStyles((theme) => ({
   newsletterContainer: {
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: "#1976d2",
     padding: theme.spacing(4),
   },
   container: {
     display: "flex",
     justifyContent: "space-between",
+    [theme.breakpoints.down("sm")]: {
+      flexDirection: "column",
+    },
   },
   title: {
     display: "flex",
     alignItems: "center",
+    color: "#fff",
+    [theme.breakpoints.down("sm")]: {
+      textAlign: "center",
+      marginBottom: theme.spacing(2),
+    },
   },
   imputWrapper: {
     display: "flex",
@@ -34,7 +42,7 @@ const NewsLetter = () => {
     <div className={classes.newsletterContainer}>
       <Container className={classes.container}>
         <div className={classes.title}>
-          <Typography>Sign Up For Our Newsletter</Typography>
+          <Typography variant="h4">Sign Up For Our Newsletter</Typography>
         </div>
         <div className={classes.inputWrapper}>
           <TextField

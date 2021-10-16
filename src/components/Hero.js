@@ -3,22 +3,41 @@ import React from "react";
 import Showcase from "../images/showcase.svg";
 
 /*Import for Material UI*/
-import { Container, Typography, makeStyles, Button } from "@material-ui/core";
+import {
+  Container,
+  Typography,
+  makeStyles,
+  Button,
+  Box,
+} from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   heroContainer: {
-    marginTop: theme.spacing(2),
+    paddingTop: theme.spacing(3),
+    backgroundColor: "#212121",
+    [theme.breakpoints.down("sm")]: {
+      paddingBottom: theme.spacing(8),
+    },
   },
   container: {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    color: "white",
 
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
     },
   },
-
+  button: {
+    marginTop: theme.spacing(3),
+    padding: theme.spacing(1),
+    backgroundColor: "#1976d2",
+    color: "#fff",
+    "&:hover": {
+      backgroundColor: "#115293",
+    },
+  },
   imageWrapper: {
     width: "100%",
     [theme.breakpoints.down("sm")]: {
@@ -36,15 +55,20 @@ const Hero = () => {
     <div className={classes.heroContainer}>
       <Container className={classes.container}>
         <div>
-          <Typography variant="h4" gutterBottom>
-            Become a Material UI Developer
+          <Typography variant="h3" gutterBottom>
+            Become a{" "}
+            <Box style={{ color: "#ffc107" }}>Material UI Developer</Box>
           </Typography>
           <Typography variant="body1" gutterBottom>
             We focus on teaching our students the fundamentals of the latest and
             greatest technologies to prepare them for their first Material UI
             role.
           </Typography>
-          <Button variant="contained" color="primary">
+          <Button
+            className={classes.button}
+            variant="contained"
+            disableElevation
+          >
             Start The Enrollment
           </Button>
         </div>
