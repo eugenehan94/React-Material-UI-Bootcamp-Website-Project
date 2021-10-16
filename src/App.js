@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+/*Imports for Material UI*/
+import { Container } from "@material-ui/core";
+/*Imports for components*/
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import NewsLetter from "./components/NewsLetter";
+import Showcase from "./components/Showcase";
+import RowFirst from "./components/RowFirst";
+import RowSecond from "./components/RowSecond";
+import Faq from "./components/Faq";
+import Instructors from "./components/Instructors";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <NewsLetter />
+      <Showcase />
+      <RowFirst />
+      <RowSecond />
+      <Faq />
+      <Instructors />
+    </>
   );
 }
 
