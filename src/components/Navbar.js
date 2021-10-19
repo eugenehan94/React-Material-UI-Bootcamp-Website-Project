@@ -102,11 +102,11 @@ const Navbar = () => {
             onClick={() => setOpen(true)}
           />
           <div className={classes.linkWrapper}>
-            <Link to="/" className={classes.link}>
-              What You'll Learn
+            <Link to="/courses" className={classes.link}>
+              Courses
             </Link>
             <Link to="/" className={classes.link}>
-              Questions
+              Admission
             </Link>
             <Link to="/about" className={classes.link}>
               About
@@ -122,18 +122,18 @@ const Navbar = () => {
                 X
               </Typography>
               <Link
-                to="/"
+                to="/courses"
                 className={classes.linkSmall}
                 onClick={() => setOpen(false)}
               >
-                What You'll Learn
+                Courses
               </Link>
               <Link
                 to="/"
                 className={classes.linkSmall}
                 onClick={() => setOpen(false)}
               >
-                Questions
+                Admission
               </Link>
               <Link
                 to="/about"

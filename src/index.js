@@ -8,6 +8,7 @@ import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 /*React pages imports*/
 import About from "./pages/About";
+import Courses from "./pages/Courses";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -19,6 +20,9 @@ ReactDOM.render(
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/courses">
+          <Courses />
         </Route>
       </Switch>
     </Router>
