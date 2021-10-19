@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "center",
     color: "white",
-
+    marginTop: theme.spacing(7),
     [theme.breakpoints.down("sm")]: {
       textAlign: "center",
     },

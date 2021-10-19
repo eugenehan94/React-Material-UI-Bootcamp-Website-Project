@@ -5,11 +5,13 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  Link,
   makeStyles,
   Slide,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
+
+/*React router imports */
+import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   appbar: {
     backgroundColor: "#212121",
@@ -40,6 +42,7 @@ const useStyles = makeStyles((theme) => ({
   link: {
     color: "#fff",
     margin: theme.spacing(2),
+    textDecoration: "none",
     "&:hover": {
       textDecoration: "none",
     },
@@ -77,6 +80,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: theme.spacing(2),
     border: "1px solid #424242",
     width: "90%",
+    textDecoration: "none",
   },
 }));
 
@@ -85,25 +89,27 @@ const Navbar = () => {
   const classes = useStyles({ open });
 
   return (
-    <AppBar position="static" className={classes.appbar}>
+    <AppBar position="fixed" className={classes.appbar}>
       <Toolbar className={classes.toolbar}>
-        <Typography className={classes.title} variant="h6">
-          Material UI Bootcamp
-        </Typography>
+        <Link to="/" style={{ color: "white", textDecoration: "none" }}>
+          <Typography className={classes.title} variant="h6">
+            Material UI Bootcamp
+          </Typography>
+        </Link>
         <div>
           <MenuIcon
             className={classes.menuIcon}
             onClick={() => setOpen(true)}
           />
           <div className={classes.linkWrapper}>
-            <Link href="#" className={classes.link}>
+            <Link to="/" className={classes.link}>
               What You'll Learn
             </Link>
-            <Link href="#" className={classes.link}>
+            <Link to="/" className={classes.link}>
               Questions
             </Link>
-            <Link href="#" className={classes.link}>
-              Instructors
+            <Link to="/about" className={classes.link}>
+              About
             </Link>
           </div>
 
@@ -116,25 +122,25 @@ const Navbar = () => {
                 X
               </Typography>
               <Link
-                href="#"
+                to="/"
                 className={classes.linkSmall}
                 onClick={() => setOpen(false)}
               >
                 What You'll Learn
               </Link>
               <Link
-                href="#"
+                to="/"
                 className={classes.linkSmall}
                 onClick={() => setOpen(false)}
               >
                 Questions
               </Link>
               <Link
-                href="#"
+                to="/about"
                 className={classes.linkSmall}
                 onClick={() => setOpen(false)}
               >
-                Instructors
+                About
               </Link>
             </div>
           </Slide>

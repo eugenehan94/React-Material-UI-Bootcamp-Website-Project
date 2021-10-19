@@ -55,7 +55,7 @@ const Showcase = () => {
                 services to your company, products or services, and goals. The
                 result is a website that your company — and your visitors —
                 loves. When your brand creates a genuine connection with
-                customers and employees.
+                customers.
               </Typography>
               <Button className={classes.button}>Read More</Button>
             </CardContent>
