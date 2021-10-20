@@ -7,7 +7,7 @@ import CoursesOverview from "../components/CoursesOverview";
 import CoursesWhatYouWillLearn from "../components/CoursesWhatYouWillLearn";
 import CoursesLearnFromHome from "../components/CoursesLearnFromHome";
 import CoursesImageList from "../components/CoursesImageList";
-
+import CoursesFAQ from "../components/CoursesFAQ";
 import Footer from "../components/Footer";
 /*Material UI imports */
 import { makeStyles } from "@material-ui/core";
@@ -29,7 +29,7 @@ const Courses = () => {
       <CoursesWhatYouWillLearn />
       <CoursesLearnFromHome />
       <CoursesImageList />
-
+      <CoursesFAQ />
       <Footer />
     </div>
   );
