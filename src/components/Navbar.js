@@ -12,6 +12,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 
 /*React router imports */
 import { Link } from "react-router-dom";
+import { SiMaterialui } from "react-icons/si";
 const useStyles = makeStyles((theme) => ({
   appbar: {
     backgroundColor: "#212121",
@@ -21,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
   },
   title: {
+    fontSize: "1.5rem",
     "&:hover": {
       cursor: "pointer",
     },
@@ -93,7 +95,7 @@ const Navbar = () => {
       <Toolbar className={classes.toolbar}>
         <Link to="/" style={{ color: "white", textDecoration: "none" }}>
           <Typography className={classes.title} variant="h6">
-            Material UI Bootcamp
+            <SiMaterialui />
           </Typography>
         </Link>
         <div>
@@ -102,13 +104,15 @@ const Navbar = () => {
             onClick={() => setOpen(true)}
           />
           <div className={classes.linkWrapper}>
-            <Link to="/" className={classes.link}>
+            {/* <Link to="/" className={classes.link}>
               Home
-            </Link>
+            </Link> */}
             <Link to="/courses" className={classes.link}>
               Courses
             </Link>
-
+            <Link to="/admission" className={classes.link}>
+              Admission
+            </Link>
             <Link to="/about" className={classes.link}>
               About
             </Link>
@@ -136,7 +140,13 @@ const Navbar = () => {
               >
                 Courses
               </Link>
-
+              <Link
+                to="/admission"
+                className={classes.linkSmall}
+                onClick={() => setOpen(false)}
+              >
+                Admission
+              </Link>
               <Link
                 to="/about"
                 className={classes.linkSmall}

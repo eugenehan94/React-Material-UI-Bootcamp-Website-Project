@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 /*React pages imports*/
 import About from "./pages/About";
 import Courses from "./pages/Courses";
+import Admission from "./pages/Admission";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -23,6 +24,9 @@ ReactDOM.render(
         </Route>
         <Route path="/courses">
           <Courses />
+        </Route>
+        <Route path="/admission">
+          <Admission />
         </Route>
       </Switch>
     </Router>
