@@ -47,7 +47,7 @@ const AdmissionHero = () => {
             <Box className={classes.contentWrapper}>
               <Typography variant="h4">COVID-19 RELIEF SCHOLARSHIP</Typography>
 
-              <Typography variant="body">
+              <Typography variant="body1">
                 Over the last several months we’ve seen unprecedented changes to
                 our world, economy and lives, as a result of COVID-19. For many
                 people this has meant interruptions to their employment and
