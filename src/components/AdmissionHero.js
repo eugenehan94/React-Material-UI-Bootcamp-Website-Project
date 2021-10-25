@@ -1,5 +1,6 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { AppContext } from "./context";
+import ButtonSnackbar from "./ButtonSnackbar";
 /*Material UI imports*/
 import {
   Container,
@@ -7,6 +8,7 @@ import {
   Grid,
   Box,
   makeStyles,
+  Button,
 } from "@material-ui/core";
 import MoneyOffIcon from "@material-ui/icons/MoneyOff";
 const useStyles = makeStyles((theme) => ({
@@ -22,6 +24,20 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+  },
+  button: {
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(2),
+    backgroundColor: "#1976d2",
+    color: "white",
+
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
+    },
+
+    "&:hover": {
+      backgroundColor: "#115293",
+    },
   },
   iconWrapper: {
     height: "100%",
@@ -39,8 +55,10 @@ const useStyles = makeStyles((theme) => ({
 
 const AdmissionHero = () => {
   const classes = useStyles();
+  const { handleClick } = useContext(AppContext);
   return (
     <div className={classes.container}>
+      <ButtonSnackbar />
       <Container>
         <Grid container>
           <Grid item md={6} xs={12}>
@@ -53,6 +71,16 @@ const AdmissionHero = () => {
                 people this has meant interruptions to their employment and
                 school, resulting in a loss of income or potential income.
               </Typography>
+              <Box>
+                <Button
+                  className={classes.button}
+                  variant="contained"
+                  disableElevation
+                  onClick={() => handleClick()}
+                >
+                  Learn More
+                </Button>
+              </Box>
             </Box>
           </Grid>
           <Grid item md={6} xs={12}>

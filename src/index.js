@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+
+import { AppProvider } from "./components/context";
+
 /*React Router imports*/
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
@@ -13,23 +16,25 @@ import Admission from "./pages/Admission";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <ScrollToTop />
-      <Switch>
-        <Route exact path="/">
-          <App />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/courses">
-          <Courses />
-        </Route>
-        <Route path="/admission">
-          <Admission />
-        </Route>
-      </Switch>
-    </Router>
+    <AppProvider>
+      <Router>
+        <ScrollToTop />
+        <Switch>
+          <Route exact path="/">
+            <App />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/courses">
+            <Courses />
+          </Route>
+          <Route path="/admission">
+            <Admission />
+          </Route>
+        </Switch>
+      </Router>
+    </AppProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

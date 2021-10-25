@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
 
 const CoursesWhatYouWillLearn = () => {
   const [selection, setSelection] = useState(0);
-  console.log(selection);
+
   const classes = useStyles({ selection });
   return (
     <div className={classes.container}>

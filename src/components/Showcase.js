@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { AppContext } from "./context";
 /*Material UI imports */
 import {
   Container,
@@ -39,6 +39,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 const Showcase = () => {
   const classes = useStyles();
+  /*useContext*/
+  const { handleClick } = useContext(AppContext);
   return (
     <Container className={classes.container}>
       <Grid container spacing={3}>
@@ -57,7 +59,9 @@ const Showcase = () => {
                 loves. When your brand creates a genuine connection with
                 customers.
               </Typography>
-              <Button className={classes.button}>Read More</Button>
+              <Button className={classes.button} onClick={handleClick}>
+                Read More
+              </Button>
             </CardContent>
           </Card>
         </Grid>
@@ -75,7 +79,9 @@ const Showcase = () => {
                 optimization (SEO). SEO refers to an umbrella of techniques that
                 enhance your website’s ranking for relevant search results.
               </Typography>
-              <Button className={classes.button}>Read More</Button>
+              <Button className={classes.button} onClick={handleClick}>
+                Read More
+              </Button>
             </CardContent>
           </Card>
         </Grid>
@@ -93,7 +99,9 @@ const Showcase = () => {
                 audience. As a full-service digital marketing agency, we also
                 offer content marketing services to enhance your strategy.
               </Typography>
-              <Button className={classes.button}>Read More</Button>
+              <Button className={classes.button} onClick={handleClick}>
+                Read More
+              </Button>
             </CardContent>
           </Card>
         </Grid>

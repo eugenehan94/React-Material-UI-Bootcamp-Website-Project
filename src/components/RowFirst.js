@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 /*Component imports*/
 import reactSVG from "../images/reactSVG.svg";
+/*React components imports */
+import { AppContext } from "./context";
 
 /*Material UI imports*/
 import {
@@ -48,6 +50,8 @@ const useStyles = makeStyles((theme) => ({
 
 const RowFirst = () => {
   const classes = useStyles();
+
+  const { handleClick } = useContext(AppContext);
   return (
     <div className={classes.firstRowContainer}>
       <Container>
@@ -74,6 +78,7 @@ const RowFirst = () => {
               <Button
                 className={classes.button}
                 startIcon={<ChevronRightIcon />}
+                onClick={() => handleClick()}
               >
                 Read More
               </Button>

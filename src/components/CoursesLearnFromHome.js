@@ -7,7 +7,7 @@ import LearnFromHome from "../images/LearnFromHome.png";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundColor: "#f7f7f7",
+    backgroundColor: "#FFE5B4",
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
   },

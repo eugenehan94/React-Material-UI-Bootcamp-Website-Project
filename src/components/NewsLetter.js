@@ -1,5 +1,6 @@
-import React from "react";
-
+import React, { useContext } from "react";
+import { AppContext } from "./context";
+/*Material UI imports */
 import {
   Container,
   Typography,
@@ -38,6 +39,10 @@ const useStyles = makeStyles((theme) => ({
 
 const NewsLetter = () => {
   const classes = useStyles();
+  /*useContext*/
+  const context = useContext(AppContext);
+  const { handleClick } = context;
+
   return (
     <div className={classes.newsletterContainer}>
       <Container className={classes.container}>
@@ -51,7 +56,11 @@ const NewsLetter = () => {
             fullWidth
             InputProps={{
               endAdornment: (
-                <Button variant="outlined" disableElevation>
+                <Button
+                  variant="outlined"
+                  disableElevation
+                  onClick={handleClick}
+                >
                   Submit
                 </Button>
               ),

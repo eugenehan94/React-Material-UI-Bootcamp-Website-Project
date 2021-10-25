@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "./context";
+
 /*Import for components*/
 import Showcase from "../images/showcase.svg";
-
+import ButtonSnackbar from "./ButtonSnackbar";
 /*Import for Material UI*/
 import {
   Container,
@@ -51,6 +53,10 @@ const useStyles = makeStyles((theme) => ({
 
 const Hero = () => {
   const classes = useStyles();
+
+  const context = useContext(AppContext);
+  const { handleClick } = context;
+
   return (
     <div className={classes.heroContainer}>
       <Container className={classes.container}>
@@ -68,6 +74,7 @@ const Hero = () => {
             className={classes.button}
             variant="contained"
             disableElevation
+            onClick={() => handleClick()}
           >
             Start The Enrollment
           </Button>
@@ -76,6 +83,7 @@ const Hero = () => {
           <img src={Showcase} alt="Showcase" className={classes.image} />
         </div>
       </Container>
+      <ButtonSnackbar />
     </div>
   );
 };

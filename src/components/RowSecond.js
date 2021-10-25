@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useContext } from "react";
 /*Component imports*/
+import { AppContext } from "./context";
 import MaterialUI from "../images/MaterialUI.svg";
 
 /*Material UI imports*/
@@ -51,6 +52,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 const RowSecond = () => {
   const classes = useStyles();
+  const { handleClick } = useContext(AppContext);
   return (
     <div className={classes.secondRowContainer}>
       <Container>
@@ -75,6 +77,7 @@ const RowSecond = () => {
               <Button
                 className={classes.button}
                 startIcon={<ChevronRightIcon />}
+                onClick={() => handleClick()}
               >
                 Read More
               </Button>
