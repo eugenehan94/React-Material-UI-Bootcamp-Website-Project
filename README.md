@@ -1,8 +1,21 @@
 # React and Material UI Bootcamp Website
 
-## Github page link: https://eugenehan94.github.io/React-Material-UI-Bootcamp-Website-Project/
+### Github page link: https://eugenehan94.github.io/React-Material-UI-Bootcamp-Website-Project/
 
 A webpage built with React Js and Material UI framework.
+
+## Home Page Demo
+![MaterialUIHomePage](https://user-images.githubusercontent.com/59939048/140668325-fdab745d-5714-42bd-b975-5c927fa89ce6.gif)
+
+## Courses Page Demo
+![MaterialUICoursesPage](https://user-images.githubusercontent.com/59939048/140668356-7b9a9be9-6121-4e35-ad4d-92c5cbe1d9cd.gif)
+
+## Admission Page Demo
+![MaterialUIAdmissionsPage](https://user-images.githubusercontent.com/59939048/140668370-70ee2abd-d73f-4737-a783-c6bedf3f1457.gif)
+
+## About Page Demo
+![MaterialUIAboutPage](https://user-images.githubusercontent.com/59939048/140668383-a88cab6c-ddff-4d2a-a055-9a3a44db29d5.gif)
+
 
 
 -----------------------------------------------------------------------------------------------------
